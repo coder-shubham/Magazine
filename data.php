@@ -28,8 +28,8 @@ if($_POST['ids'] == "active"){
 	if(mysqli_num_rows($query) == 0)
 	{
 		echo "<tr><td colspan = '4'>no rows returned</td></tr>";
-		unset($_SESSION["email"]);
-		unset($_SESSION["reminder"]);
+		unset($_SESSION["Vachanamemail"]);
+		unset($_SESSION["Vachanamreminder"]);
 	}
 	else
 	{
@@ -49,8 +49,8 @@ if($_POST['ids'] == "active"){
 		}
 		
 		echo "</table><br><br>";
-		$_SESSION["email"]=$emailList;
-		$_SESSION["reminder"] = "yes";
+		$_SESSION["Vachanamemail"]=$emailList;
+		$_SESSION["Vachanamreminder"] = "yes";
 		echo  "<a href='mail.php' target='_blank'><button class='btn pixel-btn mt-15'>Send Reminder</button></a>";
 	}
 	
@@ -87,8 +87,8 @@ elseif($_POST['ids'] == "inactive"){
 	if(mysqli_num_rows($query) == 0)
 	{
 		echo "<tr><td colspan = '4'>no rows returned</td></tr>";
-		unset($_SESSION["email"]);
-		unset($_SESSION["reminder"]);
+		unset($_SESSION["Vachanamemail"]);
+		unset($_SESSION["Vachanamreminder"]);
 	}
 	else
 	{
@@ -100,8 +100,8 @@ elseif($_POST['ids'] == "inactive"){
 			$count++;
 		}
 		echo "</table><br><br>";
-		$_SESSION["email"]=$emailList;
-		unset($_SESSION["reminder"]);
+		$_SESSION["Vachanamemail"]=$emailList;
+		unset($_SESSION["Vachanamreminder"]);
 	     echo  "<a href='mail.php' target='_blank'><button class='btn pixel-btn mt-15'>Send Mail</button></a>";	     
 	 }
 

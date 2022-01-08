@@ -18,7 +18,7 @@
     <title>Vachanam Balivediyil</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="./img/bg-img/logo.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">

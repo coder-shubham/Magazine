@@ -4,7 +4,7 @@ require "session.php";
 
 session_start();
 
-if(!isset($_SESSION["export"]))
+if(!isset($_SESSION["Vachanamexport"]))
 {
    	echo "<script type='text/javascript'>alert('Nothing To Export')</script>";
        echo "<script type='text/javascript'>window.close()</script>";
@@ -16,7 +16,7 @@ $fileName = "Subscription_Report-" . date("d/m/y") . ".xls";
 header("Content-Disposition: attachment; filename=\"$fileName\""); 
 header("Content-Type: application/vnd.ms-excel"); 
 
-$data = $_SESSION["export"];
+$data = $_SESSION["Vachanamexport"];
  
 $flag = false; 
 foreach($data as $row) { 

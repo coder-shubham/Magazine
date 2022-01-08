@@ -84,7 +84,7 @@ require "subs_count.php";
               <!-- Nav Start -->
               <div class="classynav">
                 <ul>
-                  <li><a href="#">Home</a></li>
+                  
                   <li><a href="#">Transactions</a>
                     <ul class="dropdown">
                       <li><a href="home.php">Subscription</a></li>
@@ -95,6 +95,7 @@ require "subs_count.php";
                       <li><a href="report.php">Subscription Report</a></li>
                     </ul>
                   </li>
+		  <li><a href="import.php" target="_blank">Import</a></li>
                   <li><a href="#">Settings</a>
                     <ul class="dropdown">
                       <li><a href="changepasswd.php">Change Password</a></li>
@@ -484,7 +485,7 @@ require "subs_count.php";
             </div>
             <div class="scf-text">
               <h2><span class="counter"><?php echo $today; ?></span></h2>
-              <h6>New Subscriber Added</h6>
+              <h6>Subscriber To Be Added</h6>
             </div>
           </div>
         </div>

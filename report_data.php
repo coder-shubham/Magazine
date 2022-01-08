@@ -51,8 +51,8 @@ if(mysqli_num_rows($query) == 0)
 {
 		$data .= "<tr><td colspan = '4'>no rows returned</td></tr>";
 		$data .= "</table>";
-		unset($_SESSION["data"]);
-		unset($_SESSION["export"]); 
+		unset($_SESSION["Vachanamdata"]);
+		unset($_SESSION["Vachanamexport"]); 
 		echo $data;
 }
 else
@@ -65,8 +65,8 @@ else
     	}
 		//echo"</tbody>";
 		$data .= "</table>";
-		$_SESSION["data"] = $data;
-		$_SESSION["export"] = $export;
+		$_SESSION["Vachanamdata"] = $data;
+		$_SESSION["Vachanamexport"] = $export;
 		echo $data;
 }
 ?>

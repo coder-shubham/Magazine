@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="./img/bg-img/logo.png">
 <style>
 * {
   box-sizing: border-box;
@@ -32,7 +33,7 @@
    session_start();
 
 
-   if(!isset($_SESSION["data"]))
+   if(!isset($_SESSION["Vachanamdata"]))
    {
    	echo "<script type='text/javascript'>alert('Nothing To Print')</script>";
    	echo "<script type='text/javascript'>window.close()</script>";
@@ -40,7 +41,7 @@
 
    $dom = new domDocument; 
     
-   $dom->loadHTML($_SESSION["data"]); 
+   $dom->loadHTML($_SESSION["Vachanamdata"]); 
    
    $dom->preserveWhiteSpace = false; 
    
